@@ -67,33 +67,33 @@ Masalah riset yang layak harus memenuhi 5 kriteria:
 PROBLEM STATEMENT BUILDER
 
 Domain & Konteks
-  Domain   : ____________________
-  Konteks  : ____________________
+  Domain   : Sistem Informasi
+  Konteks  : Pengelolaan dana Karang Taruna di lingkungan desa yang masih belum transparan kepada warga.
 
 System Context
-  Input       : ____________________
-  Process     : ____________________
-  Output      : ____________________
-  Outcome     : ____________________
-  Constraints : ____________________
-  Stakeholders: ____________________
+  Input       : Data pemasukan (iuran warga, donatur) dan pengeluaran (biaya acara, perlengkapan, hadiah).
+  Process     : Pengurus karang taruna mengelola dan mencatat dana kegiatan. 
+  Output      : Laporan penggunaan dana kegiatan.
+  Outcome     : Tingkat pemahaman dan kepercayaan warga terhadap penggunaan dana.
+  Constraints : Tidak adanya sistem transparansi, keterbatasan penggunaan teknologi, serta laporan tidak disampaikan secara rutin.
+  Stakeholders: Warga, anggota Karang Taruna, serta pengurus lingkungan (RT/RW).
 
 Fenomena → Problem
-  Fenomena yang diamati             : ____________________
-  Gejala (symptom) yang terukur     : ____________________
-  Masalah yang didiagnosis          : ____________________
-  Masalah riset (researchable)      : ____________________
-  Variabel yang terukur             : ____________________
+  Fenomena yang diamati             : Dalam kegiatan Karang Taruna, sering dilakukan pengumpulan dana dari warga untuk berbagai acara seperti lomba Agustusan, kegiatan Ramadhan seperti berbagi takjil, oncor keliling, dan acara jalan sehat.
+  Gejala (symptom) yang terukur     : Warga sering mempertanyakan penggunaan dana karena tidak mengetahui secara jelas total pemasukan, pengeluaran, dan sisa dana.
+  Masalah yang didiagnosis          : Informasi penggunaan dana hanya diketahui oleh anggota Karang Taruna serta pengurus lingkungan (RT/RW).
+  Masalah riset (researchable)      : Belum adanya mekanisme yang efektif untuk menyampaikan informasi penggunaan dana Karang Taruna secara transparan dan mudah diakses oleh warga.
+  Variabel yang terukur             : Tingkat transparansi informasi (%), jumlah laporan yang tersedia, dan tingkat kepuasan warga (%).
 
 Problem Quality Check
-  [ ] Clarity — Apakah satu orang membaca akan paham?
-  [ ] Measurability — Apakah ada metrik kuantitatif?
-  [ ] Relevance — Apakah penting untuk domain?
-  [ ] Testability — Apakah bisa gagal?
-  [ ] Impact — Apakah ada kontribusi jika terjawab?
+  [√] Clarity — Apakah satu orang membaca akan paham? Masalah sudah jelas dan mudah dipahami.
+  [√] Measurability — Apakah ada metrik kuantitatif? Memiliki indikator yang dapat diukur.
+  [√] Relevance — Apakah penting untuk domain? Relevan dengan kondisi di masyarakat.
+  [√] Testability — Apakah bisa gagal? Dapat diuji melalui penerapan sistem.
+  [√] Impact — Apakah ada kontribusi jika terjawab? Memberikan dampak terhadap kepercayaan warga.
 
 Problem Statement (1 paragraf):
-  ____________________
+  Dalam kegiatan Karang Taruna, seperti acara lomba Agustusan dan kegiatan Ramadhan, sering dilakukan pengumpulan dana dari warga untuk mendukung pelaksanaan acara. Namun, tidak semua warga mengetahui secara jelas bagaimana dana tersebut digunakan, termasuk total pemasukan, pengeluaran, dan sisa dana. Hal ini menyebabkan munculnya pertanyaan serta kurangnya transparansi dalam pengelolaan dana. Permasalahan ini terjadi karena informasi keuangan hanya diketahui oleh anggota Karang Taruna serta pengurus lingkungan (RT/RW) dan tidak disampaikan secara terbuka kepada seluruh warga. Oleh karena itu, diperlukan penelitian untuk menganalisis bagaimana penerapan sistem informasi dapat menyajikan laporan penggunaan dana Karang Taruna secara transparan dan mudah diakses oleh warga, dengan variabel pengukuran berupa tingkat transparansi informasi, jumlah laporan yang tersedia, serta tingkat kepuasan warga.
 ```
 
 ---
@@ -102,17 +102,17 @@ Problem Statement (1 paragraf):
 
 Pilih satu topik di bidang TI yang diminati. Transformasikan melalui 5 tahap Problem Formation Model.
 
-**Topik awal:** ________________________________________
+**Topik awal:** Sistem Informasi Transparansi Dana Karang Taruna Berbasis Web
 
 | Tahap | Hasil |
 |-------|-------|
-| Reality | *Contoh: Aplikasi e-commerce sering ditinggalkan saat checkout* |
-| Observed Issue (Symptom) | *Contoh: Bounce rate checkout 68%* |
-| Diagnosed Problem (Root Cause) | |
-| Researchable Problem | |
-| Measurable Variable | |
+| Reality | Dalam kegiatan Karang Taruna seperti lomba Agustusan atau acara Ramadhan, sering dilakukan pengumpulan dana dari warga. |
+| Observed Issue (Symptom) | Warga sering mempertanyakan penggunaan dana karena tidak mengetahui secara jelas total pemasukan, pengeluaran, dan sisa dana. |
+| Diagnosed Problem (Root Cause) | Informasi penggunaan dana hanya diketahui oleh anggota Karang Taruna serta pengurus lingkungan (RT/RW) dan tidak disampaikan secara terbuka kepada seluruh warga. |
+| Researchable Problem | Belum adanya mekanisme yang efektif untuk menyampaikan informasi penggunaan dana Karang Taruna secara transparan dan mudah diakses oleh warga. |
+| Measurable Variable | Tingkat transparansi (%), jumlah laporan yang tersedia, tingkat kepuasan warga (%). |
 
-**Apakah terjebak solution-first thinking?** [ ] Ya / [ ] Tidak
+**Apakah terjebak solution-first thinking?** [ ] Ya / [√] Tidak
 > Jika ya, kembali ke tahap mana? ________________________
 
 ---
@@ -123,14 +123,14 @@ Gambarkan konteks sistem dari masalah riset di Latihan 1.
 
 | Komponen | Deskripsi |
 |----------|----------|
-| Input | *Contoh: Request HTTP dari browser pengguna* |
-| Process | |
-| Output | |
-| Outcome | |
-| Constraints | |
-| Stakeholders | |
+| Input | Data pemasukan (iuran warga, donatur) dan pengeluaran (biaya acara, perlengkapan, hadiah). |
+| Process | Sistem mengelola dan menyusun data keuangan menjadi laporan yang jelas dan terstruktur. |
+| Output | Informasi laporan dana yang dapat diakses oleh warga. |
+| Outcome | Warga lebih memahami penggunaan dana dan meningkatnya kepercayaan terhadap Karang Taruna. |
+| Constraints | Tidak semua warga terbiasa menggunakan teknologi, serta keterbatasan akses internet. |
+| Stakeholders | Warga, anggota Karang Taruna, serta pengurus lingkungan (RT/RW). |
 
-**Komponen mana yang paling relevan dengan masalah riset?** _______________
+**Komponen mana yang paling relevan dengan masalah riset?** Process
 
 ---
 
@@ -140,17 +140,16 @@ Evaluasi problem statement yang sudah dibuat menggunakan 5 kriteria.
 
 | Kriteria | Skor (1-5) | Justifikasi |
 |----------|-----------|-------------|
-| Clarity | *Contoh: 4 — cukup jelas tapi perlu spesifikasi dataset* | |
-| Measurability | | |
-| Relevance | | |
-| Testability | | |
-| Impact | | |
+| Clarity | 5 | Sudah jelas karena berdasarkan kondisi nyata di lingkungan masyarakat. |
+| Measurability | 4 | Dapat diukur melalui jumlah laporan dan tingkat kepuasan warga. |
+| Relevance | 5 | Sangat relevan dengan kebutuhan transparansi di masyarakat. |
+| Testability | 4 | Dapat diuji melalui penerapan sistem informasi. |
+| Impact | 5 | Memberikan dampak pada peningkatan kepercayaan dan partisipasi warga. |
 
-**Skor total:** _____ / 25
+**Skor total:** 23 / 25
 
 **Problem statement versi final (1 paragraf):**
-> ___________________________________________________
-> ___________________________________________________
+> Pengelolaan dana Karang Taruna yang berasal dari iuran warga seringkali tidak disertai dengan laporan yang transparan, sehingga menimbulkan pertanyaan dan keraguan dari masyarakat terkait penggunaan dana. Hal ini terjadi karena informasi keuangan hanya diketahui oleh anggota Karang Taruna serta pengurus lingkungan (RT/RW) dan tidak disampaikan secara terbuka kepada seluruh warga. Oleh karena itu, penelitian ini bertujuan untuk menganalisis bagaimana penerapan sistem informasi dapat meningkatkan transparansi pengelolaan dana serta kepercayaan warga, yang diukur melalui tingkat transparansi informasi, jumlah laporan yang tersedia, dan tingkat kepuasan warga.
 
 ---
 
@@ -159,5 +158,4 @@ Evaluasi problem statement yang sudah dibuat menggunakan 5 kriteria.
 > Bandingkan "masalah" yang biasa ditemui saat coding (bug, error) dengan masalah riset. Apa perbedaan fundamental dalam cara mendefinisikan dan mendekati keduanya?
 
 **Jawaban:**
-> ___________________________________________________
-> ___________________________________________________
+> Menurut saya, masalah dalam coding dan masalah dalam riset itu berbeda. Pada coding, masalah biasanya terlihat langsung seperti error atau bug sehingga fokusnya adalah memperbaiki. Sedangkan dalam riset, masalah tidak selalu terlihat secara langsung dan perlu dianalisis terlebih dahulu untuk menemukan akar permasalahan. Selain itu, masalah dalam riset juga harus dapat diukur dan dibuktikan menggunakan data, sehingga pendekatannya lebih sistematis dibandingkan dengan penyelesaian masalah pada coding.
