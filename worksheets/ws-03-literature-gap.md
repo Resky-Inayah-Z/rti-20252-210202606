@@ -61,39 +61,44 @@ Membandingkan deep learning 2024 dengan decision tree sederhana tanpa justifikas
 ```
 LITERATURE MAPPING
 
-Topik      : ____________________
-Database   : ____________________
-Query      : ____________________
-Tahun      : ____________________
-Hasil awal : ____ paper → Screening → ____ paper final
+Topik      : Perancangan Website Profil Sekolah sebagai Media Informasi Berbasis WordPress
+Database   : Google Scholar / Jurnal Nasional
+Query      : Website sekolah, profil sekolah, sistem informasi sekolah, wordpress
+Tahun      : 2022-2025
+Hasil awal : 8 paper → Screening → 5 paper final
 
 Literature Matrix (concept-centric):
 
 | Study | Tahun | Method | Data | Result | Limitation |
 |-------|-------|--------|------|--------|------------|
-|       |       |        |      |        |            |
+| Andika Saputra et al. | 2025 | WordPress + Partisipatif | Profil Sekolah | Website berhasil mempermudah penyampaian informasi sekolah | Keterampilan digital pengguna masih terbatas |
+| Firman et al. | 2023 | Prototype + WordPress | Data Sekolah | Website layak digunakan sebagai media informasi sekolah | Fitur masih terbatas |
+| Bagus Ageng Alfahri et al. | 2025 | SDLC Prototyping | Profil Sekolah | Informasi lebih cepat dan mudah diakses | Fitur belum lengkap |
+| Muhammad Prayoga Indra Surya et al. | 2024 | Agile | Data Sekolah | Sistem berjalan sesuai kebutuhan sekolah | Perlu pengembangan lanjutan |
+| Ragil Widodo Saputro et al. | 2022 | Waterfall | Profil TK | Sistem berjalan baik dan membantu penyampaian informasi | Loading masih lambat |
 
 Pola yang ditemukan:
-  Metode dominan     : ____________________
-  Dataset umum       : ____________________
-  Limitasi berulang  : ____________________
+  Metode dominan     : Prototype, SDLC, Agile, dan Waterfall
+  Dataset umum       : Data profil sekolah, data guru, data siswa, dan informasi sekolah
+  Limitasi berulang  : Fitur masih terbatas, performa sistem belum optimal, dan perlu pengembangan lebih lanjut.
 
 GAP IDENTIFICATION
 
-Gap 1: [Jenis: performance / method / data / context]
-  Deskripsi    : ____________________
-  Bukti        : ____________________
-  Signifikansi : ____________________
+Gap 1: [Jenis: Method Gap]
+  Deskripsi    : Belum banyak penelitian yang menggunakan WordPress sebagai CMS utama untuk pengelolaan website sekolah.
+  Bukti        : Dari beberapa penelitian,sebagaian besar masih menggunakan PHP native dan MySQL.
+  Signifikansi : WordPress lebih mudah digunakan, terutama untuk sekolah yang tidak memiliki tenaga IT khusus.
 
-Gap 2: [Jenis: ____]
-  Deskripsi    : ____________________
-  Bukti        : ____________________
-  Signifikansi : ____________________
+Gap 2: [Jenis: Context Gap]
+  Deskripsi    : Belum ada implementasi website profil sekolah berbasis WordPress pada SMP Negeri 1 Alian
+  Bukti        : Objek penelitian sebelumnya masih pada sekolah lain seperti TK dan SD.
+  Signifikansi : Penelitian ini dapat menjadi solusi baru sesuai kebutuhan sekolah yang menjadi objek penelitian.
 
 Baseline Selection:
 | Baseline | Relevansi | Representatif | Source |
 |----------|-----------|---------------|--------|
-|          |           |               |        |
+| Website sekolah SD Negeri 42 Kota Sorong | Sama-sama website sekolah berbasis WordPress | Mewakili implementasi WordPress di sekolah | Firman et al., 2023 |
+| Website profile SD Negeri 12 Badau | Fokus pada profil sekolah | Relevan sebagai pembanding sistem informasi sekolah | Andika Saputra et al., 2025 |
 ```
 
 ---
@@ -102,20 +107,20 @@ Baseline Selection:
 
 Gunakan topik riset dari WS-02. Cari minimal 5 paper relevan menggunakan Google Scholar atau database lain.
 
-**Topik riset:** ________________________________________
-**Query pencarian:** ____________________________________
-**Database:** ___________________________________________
+**Topik riset:** Perancangan Website Profil Sekolah sebagai Media Informasi Berbasis WordPress
+**Query pencarian:** Website sekolah, profil sekolah, sistem informasi sekolah, wordpress
+**Database:** Google Scholar / Jurnal Nasional
 
 | # | Study | Tahun | Method | Dataset | Result | Limitasi |
 |---|-------|-------|--------|---------|--------|----------|
-| 1 | *Contoh: Rahman et al.* | *2023* | *CNN* | *ImageNet subset* | *Acc 91%* | *Hanya 3 kelas* |
-| 2 | | | | | | |
-| 3 | | | | | | |
-| 4 | | | | | | |
-| 5 | | | | | | |
+| 1 | Andika Saputra et al. | 2025 | WordPress + Partisipatif | Data profil sekolah | Website berhasil dibangun dan mempermudah akses informasi sekolah | Keterampilan digital guru masih terbatas |
+| 2 | Firman et al. | 2023 | Prototype + WordPress | Data Sekolah | Website layak digunakan sebagai media informasi sekolah | Fitur masih fokus pada informasi dasar |
+| 3 | Bagus Ageng Alfahri et al. | 2025 | SDLC | Profil Sekolah | Sistem membantu penyampaian informasi menjadi lebih cepat dan interaktif | Fitur masih sederhana |
+| 4 | Muhammad Prayoga Indra Surya et al. | 2024 | Agile | Data Sekolah | Sistem informasi sekolah berbasis web berhasil memenuhi kebutuhan sekolah | Perlu pengembangan lebih lanjut |
+| 5 | Ragil Widodo Saputro et al. | 2022 | Waterfall | Profil TK | Sistem informasi berbasis website berjalan dengan baik | Loading masih lambat |
 
-**Pola yang terlihat — Metode dominan:** ___________________
-**Limitasi yang berulang:** ______________________________
+**Pola yang terlihat — Metode dominan:** Metode yang paling sering digunakan adalah Prototype, SDLC, Agile, dan Waterfall
+**Limitasi yang berulang:** Fitur masih terbatas, performa sistem belum optimal, dan pengembangan sistem masih perlu ditingkatkan.
 
 ---
 
@@ -125,14 +130,14 @@ Berdasarkan tabel di Latihan 1, identifikasi gap.
 
 | Jenis Gap | Ditemukan? | Gap Statement |
 |-----------|-----------|---------------|
-| Performance Gap | [ ] Ya / [ ] Tidak | *Contoh: Akurasi turun di bawah 80% untuk kelas minoritas* |
-| Method Gap | [ ] Ya / [ ] Tidak | |
-| Data Gap | [ ] Ya / [ ] Tidak | |
-| Context Gap | [ ] Ya / [ ] Tidak | |
+| Performance Gap | [ √ ] Ya / [ ] Tidak | Beberapa website sekolah masih memiliki kendala performa seperti loading lambat dan belum optimal |
+| Method Gap | [ √ ] Ya / [ ] Tidak | Belum banyak penelitian yang memanfaatkan WordPress sebagai CMS utama dalam pengembangan website sekolah |
+| Data Gap | [ ] Ya / [ √ ] Tidak | Data yang digunakan sudah cukup sesuai dengan kebutuhan penelitian |
+| Context Gap | [ √ ] Ya / [ ] Tidak | Belum ada implementasi website sekolah berbasis WordPress pada SMP Negeri 1 Alian |
 
-**Gap utama yang dipilih:** _____________________________
+**Gap utama yang dipilih:** Method Gap dan Context Gap
 **Mengapa gap ini penting (bukan sekadar "belum ada yang meneliti")?**
-> ___________________________________________________
+> Karena sekolah membutuhkan sistem yang mudah dikelola dan dikembangkan tanpa harus memiliki kemampuan coding yang tinggi. WordPress menjadi solusi yang lebih praktis dan efisien.
 
 ---
 
@@ -142,11 +147,11 @@ Pilih 2 baseline dari literatur yang sudah dibaca.
 
 | # | Baseline | Mengapa Relevan | Mengapa Representatif | Apakah SOTA? | Sumber |
 |---|----------|----------------|----------------------|-------------|--------|
-| 1 | *Contoh: RF + TF-IDF* | *Task sama: klasifikasi teks* | *Dipakai 6 dari 10 paper* | *Bukan, tapi common practice* | *Lee et al., 2022* |
-| 2 | | | | | |
+| 1 | Website sekolah SD Negeri 42 Kota Sorong | Sama-sama menggunakan WordPress dan fokus pada media informasi sekolah | Mewakili implementasi WordPress untuk sekolah | Tidak, karena hanya menerapkan WordPress sebagai media informasi sekolah dan masih menggunakan pendekatan yang umum digunakan | Firman et al., 2023 |
+| 2 | Website profile SD Negeri 12 Badau | Sama-sama fokus pada profil sekolah | Implementasi terbaru berbasis WordPress | Tidak, karena penelitian berfokus pada implementasi website profil sekolah, bukan pengembangan metode atau teknologi terbaru | Andika Saputra et al., 2025 |
 
-**Apakah pemilihan baseline ini bisa dianggap straw man?** [ ] Ya / [ ] Tidak
-> Justifikasi: ________________________________________
+**Apakah pemilihan baseline ini bisa dianggap straw man?** [ ] Ya / [√] Tidak
+> Justifikasi: Karena kedua baseline dipilih dari penelitian yang memiliki tujuan dan fitur yang hampir sama, sehingga layak dijadikan pembanding.
 
 ---
 
@@ -155,5 +160,5 @@ Pilih 2 baseline dari literatur yang sudah dibaca.
 > Apa perbedaan antara "belum ada yang meneliti ini" (klaim tanpa bukti) dengan research gap yang valid? Bagaimana cara membuktikan bahwa sebuah gap benar-benar ada?
 
 **Jawaban:**
-> ___________________________________________________
-> ___________________________________________________
+> Perbedaan antara klaim "belum ada yang meneliti" dengan research gap yang valid terletak pada bukti yang digunakan. Jika hanya mengatakan belum ada penelitian tanpa dasar yang jelas, maka itu hanya asumsi. Sedangkan research gap yang valid harus didasarkan pada hasil analisis beberapa penelitian sebelumnya yang menunjukkan adanya kekurangan atau keterbatasan.
+> Cara membuktikan bahwa gap tersebut benar-benar ada yaitu dengan mencari dan membandingkan beberapa penelitian yang relevan, lalu melihat pola kelemahan atau kekurangan yang masih bisa dikembangkan pada penelitian berikutnya.
