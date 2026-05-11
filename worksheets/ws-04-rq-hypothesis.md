@@ -67,34 +67,34 @@ Jika rantai ini tidak lengkap, RQ belum mature. Bi-directional: RQ yang tidak bi
 ```
 RQ-CONTRIBUTION-HYPOTHESIS
 
-Gap Statement  : ____________________
+Gap Statement  : Penyampaian informasi sekolah masih dilakukan secara konvensional sehingga informasi kurang efektif dan sulit diakses oleh siswa maupun masyarakat.
 
 Research Question:
-  Tipe         : [ ] Comparison  [ ] Improvement  [ ] Exploratory
-  Formulasi    : ____________________
-  Variabel IV  : ____________________
-  Variabel DV  : ____________________
-  Metrik       : ____________________
-  Dataset      : ____________________
-  Baseline     : ____________________
+  Tipe         : [ ] Comparison  [√] Improvement  [ ] Exploratory
+  Formulasi    : Apakah website profile sekolah berbasis WordPress mampu meningkatkan efektivitas penyampaian informasi dibandingkan media informasi konvensional pada SD Negeri 12 Badau?
+  Variabel IV  : Media informasi yang digunakan
+  Variabel DV  : Efektivitas penyampaian informasi
+  Metrik       : Tingkat akses informasi dan kepuasan pengguna
+  Dataset      : Data pengguna website SD Negeri 12 Badau
+  Baseline     : Media informasi konvensional seperti papan pengumuman
 
 Quality Check RQ:
-  [ ] Variabel spesifik
-  [ ] Metrik jelas
-  [ ] Baseline ada
-  [ ] Konteks disebutkan
-  [ ] Memerlukan eksperimen (bukan hanya survei literatur)
+  [√] Variabel spesifik
+  [√] Metrik jelas
+  [√] Baseline ada
+  [√] Konteks disebutkan
+  [√] Memerlukan eksperimen (bukan hanya survei literatur)
 
 Contribution Statement:
-  Apa yang baru diketahui : ____________________
-  Jenis kontribusi        : [ ] Improvement  [ ] Comparison  [ ] Novel approach
-  Gap yang diisi          : ____________________
+  Apa yang baru diketahui : Website profile sekolah berbasis WordPress lebih efektif dalam penyampaian informasi dibandingkan media konvensional.
+  Jenis kontribusi        : [√] Improvement  [ ] Comparison  [ ] Novel approach
+  Gap yang diisi          : Kurangnya media informasi sekolah yang efektif dan mudah diakses.
 
 Hypothesis Pair:
-  H₀ : ____________________
-  H₁ : ____________________
-  Threshold              : ____________________
-  Justifikasi threshold  : ____________________
+  H₀ : Tidak ada perbedaan signifikan antara website profile sekolah berbasis WordPress dan media informasi konvensional dalam efektivitas penyampaian informasi.
+  H₁ : Website profile sekolah berbasis WordPress memiliki efektivitas penyampaian informasi yang lebih baik dibandingkan media informasi konvensional.
+  Threshold              : ≥ 70% tingkat kepuasan pengguna
+  Justifikasi threshold  : Nilai 70% termasuk kategori baik dalam pengukuran keberhasilan sistem informasi.
 ```
 
 ---
@@ -103,24 +103,24 @@ Hypothesis Pair:
 
 Gunakan gap yang ditemukan di WS-03. Transformasikan menjadi Research Question.
 
-**Gap dari WS-03:** ____________________________________
+**Gap dari WS-03:** Penyampaian informasi sekolah masih dilakukan secara manual sehingga informasi kurang efektif dan sulit diakses.
 
 **RQ versi pertama (tulis bebas):**
-> ___________________________________________________
+> Apakah website profile sekolah dapat meningkatkan akses informasi pendidikan?
 
 **Evaluasi RQ:**
 
 | Komponen | Ada? | Isi |
 |----------|------|-----|
-| Metode spesifik | *Contoh: Ya — CNN vs RF* | |
-| Metrik terukur | | |
-| Baseline | | |
-| Dataset/konteks | | |
+| Metode spesifik | Ya | Website profile sekolah berbasis WordPress |
+| Metrik terukur | Belum jelas | Belum ada ukuran yang digunakan |
+| Baseline | Belum jelas | Belum ada pembanding |
+| Dataset/konteks | Ya | SD Negeri 12 Badau |
 
-**Tipe RQ:** [ ] Comparison / [ ] Improvement / [ ] Exploratory
+**Tipe RQ:** [ ] Comparison / [√] Improvement / [ ] Exploratory
 
 **RQ versi revisi (setelah evaluasi):**
-> ___________________________________________________
+> Apakah website profile sekolah berbasis WordPress mampu meningkatkan efektivitas penyampaian informasi dibandingkan media informasi konvensional pada SD Negeri 12 Badau berdasarkan tingkat akses dan kepuasan pengguna?
 
 ---
 
@@ -130,14 +130,14 @@ Rumuskan pasangan hipotesis dari RQ di Latihan 1.
 
 | Komponen | Isi |
 |----------|-----|
-| H₀ | *Contoh: Tidak ada perbedaan signifikan F1-Score antara CNN dan RF pada dataset CIC-MalMem-2022* |
-| H₁ | |
-| Metrik | |
-| Threshold | |
-| Justifikasi threshold | |
+| H₀ | Tidak ada perbedaan signifikan antara website profile sekolah berbasis WordPress dan media informasi konvensional dalam efektivitas penyampaian informasi di SD Negeri 12 Badau |
+| H₁ | Website profile sekolah berbasis WordPress memiliki efektivitas penyampaian informasi yang lebih baik dibandingkan media informasi konvensional di SD Negeri 12 Badau |
+| Metrik | Tingkat akses informasi dan kepuasan pengguna |
+| Threshold | ≥ 70% tingkat kepuasan pengguna|
+| Justifikasi threshold | Nilai 70% sudah termasuk kategori baik dalam pengukuran keberhasilan sistem informasi|
 
-**Apakah hipotesis ini falsifiable?** [ ] Ya / [ ] Tidak
-> Bagaimana cara membuktikannya salah? ___________________
+**Apakah hipotesis ini falsifiable?** [√] Ya / [ ] Tidak
+> Bagaimana cara membuktikannya salah? Dengan melakukan pengujian kepada pengguna. Jika hasil kepuasan pengguna tidak meningkat atau kurang dari threshold yang ditentukan, maka H₀ diterima.
 
 ---
 
@@ -147,15 +147,15 @@ Lengkapi rantai dari RQ hingga metode analisis.
 
 | Tahap | Isi |
 |-------|-----|
-| RQ | *Contoh: Apakah CNN menghasilkan F1-Score lebih tinggi dari RF...* |
-| Variable (IV) | *Contoh: Jenis algoritma (CNN vs RF)* |
-| Variable (DV) | |
-| Metric | |
-| Data source | |
-| Analysis method | |
+| RQ | Apakah website profile sekolah berbasis WordPress mampu meningkatkan efektivitas penyampaian informasi dibandingkan media informasi konvensional pada SD Negeri 12 Badau? |
+| Variable (IV) | Jenis media informasi yang digunakan |
+| Variable (DV) | Efektivitas penyampaian informasi |
+| Metric | Tingkat akses informasi dan kepuasan pengguna |
+| Data source | Data kuesioner pengguna dan data akses website |
+| Analysis method | Analisis deskriptif dan perbandingan hasil kuesioner |
 
-**Apakah rantai lengkap?** [ ] Ya / [ ] Tidak
-> Jika tidak, tahap mana yang perlu direvisi? ______________
+**Apakah rantai lengkap?** [√] Ya / [ ] Tidak
+> Jika tidak, tahap mana yang perlu direvisi? Tidak ada, karena seluruh tahapan sudah lengkap.
 
 ---
 
@@ -163,6 +163,6 @@ Lengkapi rantai dari RQ hingga metode analisis.
 
 > Ambil satu judul skripsi/paper yang pernah dibaca. Coba ekstrak RQ-nya. Apakah RQ tersebut memenuhi semua komponen (metode, metrik, baseline, konteks)? Jika tidak, apa yang hilang?
 
-**Judul:** _____________________________________________
-**RQ yang diekstrak:** __________________________________
-**Komponen yang hilang:** _______________________________
+**Judul:** Pembuatan Website Profile Sekolah untuk Meningkatkan Akses Informasi Pendidikan SD Negeri 12 Badau
+**RQ yang diekstrak:** Apakah website profile sekolah dapat membantu meningkatkan akses informasi pendidikan di SD Negeri 12 Badau?
+**Komponen yang hilang:** RQ tersebut belum memiliki metrik yang jelas dan belum menyebutkan baseline atau pembanding secara spesifik sehingga pengukurannya masih kurang detail.

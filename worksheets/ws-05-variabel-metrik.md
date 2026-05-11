@@ -66,19 +66,18 @@ Metrik harus ditentukan **sebelum** eksperimen. Memilih metrik setelah melihat d
 ```
 VARIABLE & METRIC DEFINITION
 
-Research Question: ____________________
-
+Research Question: Apakah website profile sekolah berbasis WordPress mampu meningkatkan efektivitas penyampaian informasi dibandingkan media informasi konvensional pada SD Negeri 12 Badau?
 | Variabel | Tipe | Konsep | Metrik | Skala | Satuan | Cara Mengukur | Justifikasi |
 |----------|------|--------|--------|-------|--------|---------------|-------------|
-|          | IV   |        |        |       |        |               |             |
-|          | DV   |        |        |       |        |               |             |
-|          | CV   |        |        |       |        |               |             |
+| Media Informasi | IV | Penggunaan media informasi sekolah | Website WordPress dan media konvensional | Nominal | - | Membandingkan media yang digunakan | Karena penelitian fokus membandingkan website dengan cara lama |
+| Efektivitas penyampaian informasi | DV | Keberhasilan penyampaian informasi | Kepuasan pengguna dan akses informasi | Ordinal | Skor 1-5 | Kuesioner dan data akses website | Karena efektivitas bisa dilihat dari kepuasan pengguna |
+| Responden pengguna | CV | Jenis pengguna sistem | Siswa dan masyarakat sekolah | Nominal | - | Menentukan responden yang sama | Agar hasil penelitian tidak bias |
 
 Alignment Check:
   RQ → Concept → Variable → Metric → Data → Result
-  [ ] Setiap langkah terdokumentasi
-  [ ] Tidak ada "lompatan logis"
-  [ ] Metrik mengukur apa yang dimaksud (construct validity)
+  [√] Setiap langkah terdokumentasi
+  [√] Tidak ada "lompatan logis"
+  [√] Metrik mengukur apa yang dimaksud (construct validity)
 ```
 
 ---
@@ -87,16 +86,16 @@ Alignment Check:
 
 Gunakan RQ dari WS-04. Definisikan variabel dan metriknya.
 
-**RQ:** __________________________________________________
+**RQ:** Apakah website profile sekolah berbasis WordPress mampu meningkatkan efektivitas penyampaian informasi dibandingkan media informasi konvensional pada SD Negeri 12 Badau?
 
 | Variabel | Tipe | Konsep Abstrak | Metrik Konkret | Skala (NOIR) | Satuan |
 |----------|------|---------------|----------------|-------------|--------|
-| *Contoh: Jenis model* | *IV* | *Pendekatan klasifikasi* | *Categorical: CNN vs RF* | *Nominal* | *—* |
-| | DV | | | | |
-| | CV | | | | |
+| Media informasi | IV | Metode penyampaian informasi | Website WordPress dan media konvensional | Nominal | — |
+| Efektivitas informasi | DV | Tingkat keberhasilan penyampaian informasi | Kepuasan pengguna dan jumlah akses informasi | Ordinal | Skor 1-5 |
+| Responden | CV | Konsistensi pengguna | Siswa dan masyarakat sekolah | Nominal | — |
 
-**Apakah ada lompatan logis dalam rantai?** [ ] Ya / [ ] Tidak
-> Jika ya, di mana? ____________________________________
+**Apakah ada lompatan logis dalam rantai?** [ ] Ya / [√] Tidak
+> Jika ya, di mana? Tidak ada, karena semua variabel dan metrik masih saling berhubungan.
 
 ---
 
@@ -106,15 +105,15 @@ Evaluasi metrik DV yang dipilih di Latihan 1 menggunakan 3 kriteria.
 
 | Kriteria | Skor (1-5) | Justifikasi |
 |----------|-----------|-------------|
-| Representative | *Contoh: 4 — F1-Score mewakili keseimbangan precision-recall* | |
-| Sensitive | | |
-| Feasible | | |
+| Representative | 4 | Kepuasan pengguna cukup mewakili efektivitas informasi |
+| Sensitive | 4 | Perubahan kecil masih bisa terlihat dari hasil kuesioner |
+| Feasible | 5 | Data mudah dikumpulkan melalui Google Form atau kuesioner |
 
-**Apakah perlu secondary metric?** [ ] Ya / [ ] Tidak
-> Jika ya, apa dan mengapa? _____________________________
+**Apakah perlu secondary metric?** [√] Ya / [ ] Tidak
+> Jika ya, apa dan mengapa? Jumlah kunjungan website, karena dapat mendukung hasil kepuasan pengguna dan menunjukkan apakah website benar-benar digunakan.
 
 **Contoh kasus ceiling effect untuk metrik ini:**
-> ___________________________________________________
+> Jika hampir semua pengguna memberikan nilai 5 pada kuesioner, maka perbedaan kualitas website akan sulit terlihat.
 
 ---
 
@@ -124,10 +123,10 @@ Bayangkan data yang akan dikumpulkan dari eksperimen. Evaluasi 4 dimensi kualita
 
 | Dimensi | Pertanyaan | Jawaban | Strategi Mitigasi |
 |---------|-----------|---------|------------------|
-| Completeness | *Apakah semua data point terkumpul?* | | |
-| Consistency | *Apakah ada kontradiksi internal?* | | |
-| Validity | *Apakah benar-benar mengukur yang dimaksud?* | | |
-| Representativeness | *Apakah sampel mewakili populasi target?* | | |
+| Completeness | *Apakah semua data point terkumpul?* | Bisa saja ada responden yang tidak mengisi lengkap | Membuat semua pertanyaan wajib diisi |
+| Consistency | *Apakah ada kontradiksi internal?* | Ada kemungkinan jawaban tidak konsisten | Mengecek ulang data sebelum analisis |
+| Validity | *Apakah benar-benar mengukur yang dimaksud?* | Data sudah sesuai dengan tujuan penelitian | Menggunakan pertanyaan yang relevan |
+| Representativeness | *Apakah sampel mewakili populasi target?* | Sampel berasal dari siswa dan masyarakat sekolah | Mengambil responden dari beberapa kelompok |
 
 ---
 
@@ -136,5 +135,5 @@ Bayangkan data yang akan dikumpulkan dari eksperimen. Evaluasi 4 dimensi kualita
 > Mengapa memilih metrik setelah melihat data dianggap p-hacking? Apa bedanya dengan eksplorasi data yang sah?
 
 **Jawaban:**
-> ___________________________________________________
-> ___________________________________________________
+> Memilih metrik setelah melihat data dianggap p-hacking karena peneliti bisa memilih hasil yang paling bagus dan mengabaikan hasil lainnya. Sedangkan eksplorasi data yang sah tetap menggunakan metrik awal dan hanya mencari pola tambahan tanpa mengubah metrik utama penelitian.
+> 
