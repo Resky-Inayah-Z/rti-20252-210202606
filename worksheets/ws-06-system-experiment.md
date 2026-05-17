@@ -67,25 +67,25 @@ Jika variabel tidak bisa di-map ke komponen apapun → arsitektur perlu didesain
 ```
 SYSTEM-EXPERIMENT MAPPING
 
-Research Question: ____________________
+Research Question: Bagaimana perancangan website profile sekolah yang responsif dapat membantu pengguna dalam memperoleh informasi di SMP Negeri 1 Alian?
 
 Variable → Component Mapping:
 | Variabel | Tipe | Komponen Sistem | Cara Manipulasi/Pengukuran |
 |----------|------|-----------------|---------------------------|
-|          | IV   |                 |                           |
-|          | DV   |                 |                           |
-|          | CV   |                 |                           |
+| Desain website responsif | IV | Tampilan desktop dan mobile website | Mengubah layout dan tampilan website |
+| Kemudahan memperoleh informasi | DV | Aktivitas pengguna saat menggunakan website | Diukur dari feedback pengguna setelah mencoba website |
+| Konten informasi sekolah | CV | Isi website profile sekolah | Informasi dibuat tetap selama pengujian |
 
 4 Prinsip Desain:
-  [ ] Traceability — Setiap komponen bisa ditelusuri ke variabel
-  [ ] Variable Isolation — IV bisa diubah tanpa mengubah CV
-  [ ] Measurement Integration — Pengukuran DV built-in
-  [ ] Reproducibility — Setup bisa direkonstruksi
+  [✅] Traceability — Setiap komponen sistem berhubungan dengan variabel penelitian
+  [✅] Variable Isolation — Tampilan website dapat diubah tanpa mengubah isi informasi sekolah
+  [✅] Measurement Integration — Sistem menyediakan proses pengambilan feedback pengguna
+  [✅] Reproducibility — Pengujian dapat dilakukan kembali dengan kondisi yang sama
 
 Experimental Setup:
-  Input data     : ____________________
-  Parameter      : ____________________
-  Output format  : ____________________
+  Input data     : Data profil SMP Negeri 1 Alian
+  Parameter      : Tampilan desktop, mobile, dan navigasi website
+  Output format  : Feedback pengguna mengenai kemudahan penggunaan website
 ```
 
 ---
@@ -94,16 +94,16 @@ Experimental Setup:
 
 Gunakan RQ dan variabel dari WS-05. Petakan ke komponen sistem.
 
-**RQ:** __________________________________________________
+**RQ:** Bagaimana perancangan website profile sekolah yang responsif dapat membantu pengguna dalam memperoleh informasi di SMP Negeri 1 Alian?
 
 | Variabel | Tipe | Komponen Sistem | Cara Manipulasi / Pengukuran |
 |----------|------|-----------------|---------------------------|
-| *Contoh: Jenis model* | *IV* | *Modul classifier (swap RF ↔ CNN)* | *Ganti config `model_type`* |
-| | DV | | |
-| | CV | | |
+| Desain website responsif | IV | Tampilan website desktop dan mobile | Mengubah desain layout website |
+| Kemudahan memperoleh informasi | DV | Aktivitas pengguna pada website | Diukur dari feedback pengguna setelah mencoba website |
+| Informasi sekolah | CV | Konten website | Data informasi dibuat tetap selama pengujian |
 
-**Apakah semua variabel bisa di-map?** [ ] Ya / [ ] Tidak
-> Jika tidak, komponen apa yang perlu ditambahkan? _________
+**Apakah semua variabel bisa di-map?** [✅] Ya / [ ] Tidak
+> Semua variabel penelitian sudah memiliki komponen sistem masing-masing.
 
 ---
 
@@ -113,14 +113,14 @@ Evaluasi desain sistem terhadap 4 prinsip.
 
 | Prinsip | Status | Bukti / Penjelasan |
 |---------|--------|-------------------|
-| Traceability | *Contoh: ✅ — setiap modul punya label variabel* | |
-| Modularity | | |
-| Controllability | | |
-| Measurability | | |
+| Traceability | ✅ | Setiap variabel memiliki hubungan dengan komponen website |
+| Modularity | ✅ | Tampilan website dapat diubah tanpa mengubah isi informasi sekolah |
+| Controllability | ✅ | Informasi sekolah dibuat tetap selama pengujian |
+| Measurability | ✅ | Pengukuran dilakukan melalui feedback pengguna setelah mencoba website |
 
-**Prinsip mana yang paling sulit dipenuhi?** _______________
+**Prinsip mana yang paling sulit dipenuhi?** Measurability
 **Strategi untuk mengatasinya:**
-> ___________________________________________________
+> Menggunakan feedback pengguna secara langsung setelah mencoba website agar hasil pengukuran lebih jelas dan sesuai pengalaman pengguna.
 
 ---
 
@@ -130,14 +130,14 @@ Jika sistem memiliki 3 komponen utama, rencanakan ablation study.
 
 | Kondisi | Komponen A | Komponen B | Komponen C | Hasil yang Diharapkan |
 |---------|-----------|-----------|-----------|----------------------|
-| Full | *Contoh: ✅ CNN* | *Contoh: ✅ Temporal features* | *Contoh: ✅ Z-score norm* | *Baseline penuh* |
-| – A | ❌ (ganti RF) | ✅ | ✅ | |
-| – B | ✅ | ❌ (tanpa temporal) | ✅ | |
-| – C | ✅ | ✅ | ❌ (tanpa normalisasi) | |
+| Full | ✅ Tampilan responsif | ✅ Navigasi jelas | ✅ Informasi lengkap | Pengguna lebih mudah memperoleh informasi |
+| – A | ❌ Tampilan tidak responsif | ✅ | ✅ | Pengguna mobile lebih sulit mengakses website |
+| – B | ✅ | ❌ Navigasi kurang jelas | ✅ | Pengguna kesulitan mencari menu tertentu |
+| – C | ✅ | ✅ | ❌ Informasi kurang lengkap | Pengguna kurang memperoleh informasi yang dibutuhkan |
 
-**Komponen mana yang diprediksi paling berkontribusi?** _____
+**Komponen mana yang diprediksi paling berkontribusi?** Navigasi website
 **Mengapa?**
-> ___________________________________________________
+> Karena navigasi membantu pengguna menemukan informasi dengan lebih cepat dan mempermudah penggunaan website.
 
 ---
 
@@ -146,5 +146,5 @@ Jika sistem memiliki 3 komponen utama, rencanakan ablation study.
 > Apa risiko jika sistem dibangun seperti produk (monolitik, fitur lengkap) lalu baru dilakukan eksperimen? Mengapa arsitektur modular penting untuk riset?
 
 **Jawaban:**
-> ___________________________________________________
-> ___________________________________________________
+> Jika sistem langsung dibuat seperti produk lengkap dengan banyak fitur, penelitian bisa menjadi kurang fokus karena terlalu banyak fitur dan komponen yang memengaruhi hasil eksperimen. Akibatnya, peneliti sulit mengetahui bagian mana yang benar-benar berpengaruh terhadap hasil penelitian.
+> Arsitektur modular penting dalam riset karena setiap komponen website dapat diuji secara terpisah, seperti tampilan responsif, navigasi, dan informasi sekolah. Dengan begitu proses penelitian menjadi lebih mudah dikontrol dan hasil pengujian lebih jelas.
