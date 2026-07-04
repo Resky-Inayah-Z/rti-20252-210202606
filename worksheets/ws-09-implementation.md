@@ -63,32 +63,32 @@ Capai **repeatability** dulu, baru **reproducibility**.
 EXPERIMENT SETUP DOCUMENTATION
 
 Hardware:
-  CPU     : ____________________
-  RAM     : ____________________
-  GPU     : ____________________
-  Storage : ____________________
+  CPU     : Intel(R) Core(TM) i5-6200 CPU @ 2.30GHz 2.40 GHz
+  RAM     : 8,00 GB
+  GPU     : Intel(R) HD Graphics 520 (128 MB)
+  Storage : 238 GB
 
 Software:
-  OS        : ____________________
-  Runtime   : ____________________
-  Framework : ____________________
+  OS        : Windows 10 Pro
+  Runtime   : Web Browser (Google Chrome)
+  Framework : WordPress
 
 Dependencies:
 | Library | Version | Sumber | Hash/Checksum |
 |---------|---------|--------|---------------|
-|         |         |        |               |
-|         |         |        |               |
+| WordPress | Versi terbaru | WordPress.com | - |
+| Google Chrome | Versi terbaru | Google Chrome | - |
 
 Konfigurasi:
-  Config file     : ____________________
-  Random seed     : ____________________
-  Hyperparameters : ____________________
+  Config file     : Pengaturan bawaan WordPress
+  Random seed     : Tidak digunakan
+  Hyperparameters : Tidak digunakan
 
 Reproducibility Check:
-  [ ] Dependency terdokumentasi (requirements.txt / lock file)
+  [✅] Dependency terdokumentasi (requirements.txt / lock file)
   [ ] Seed ditetapkan di semua level (Python, NumPy, framework)
   [ ] Config di version control
-  [ ] README instruksi reproduksi lengkap
+  [✅] README instruksi reproduksi lengkap
 ```
 
 ---
@@ -99,23 +99,23 @@ Dokumentasikan environment untuk eksperimen Anda (boleh environment saat ini ata
 
 | Komponen | Spesifikasi |
 |----------|------------|
-| CPU | *Contoh: Intel Core i7-12700H, 14 Core* |
-| RAM | *Contoh: 32 GB DDR5* |
-| GPU | *Contoh: NVIDIA RTX 3060 6GB / CPU-only jika tidak ada GPU* |
-| OS | *Contoh: Ubuntu 22.04 LTS / Windows 11* |
-| Runtime | |
-| Framework | |
-| Random Seed | |
+| CPU |Intel(R) Core(TM) i5-6200 CPU @ 2.30 GHz 2.40 GHz |
+| RAM | 8,00 GB DDR3 |
+| GPU | Intel(R) HD Graphics 520 (128 MB) |
+| OS | Windows 10 Pro |
+| Runtime | Web Browser (Google Chrome) |
+| Framework | WordPress |
+| Random Seed | Tidak digunakan karena penelitian tidak melibatkan proses acak. |
 
 **Dependencies (minimal 5):**
 
 | Library | Version | Alasan Dibutuhkan |
 |---------|---------|-------------------|
-| *Contoh: scikit-learn* | *1.3.2* | *Klasifikasi + evaluasi metrik* |
-| | | |
-| | | |
-| | | |
-| | | |
+| WordPress | Versi terbaru | Digunakan untuk membangun website profil sekolah. |
+| Google Chrome | Versi terbaru | Digunakan untuk mengakses, mengelola, dan menguji website. |
+| Google Forms | Versi web | Digunakan untuk mengumpulkan data kuesioner dari responden. |
+| Microsoft Excel | Microsoft 365 | Digunakan untuk mengolah hasil kuesioner. |
+| Koneksi Internet | Stabil | Dibutuhkan agar website dapat diakses oleh responden selama pengujian. |
 
 ---
 
@@ -125,18 +125,18 @@ Rancang tes repeatability sederhana: jalankan kode yang sama 3× di environment 
 
 | Run | Seed | Metrik Utama | Hasil Sama? |
 |-----|------|-------------|-------------|
-| 1 | *Contoh: 42* | *Contoh: Accuracy* | — |
-| 2 | | | [ ] Ya / [ ] Tidak |
-| 3 | | | [ ] Ya / [ ] Tidak |
+| 1 | - | Website dapat diakses dan seluruh menu berfungsi dengan baik | — |
+| 2 | - | Website dapat diakses dan seluruh menu berfungsi dengan baik | [✅] Ya / [ ] Tidak |
+| 3 | - | Website dapat diakses dan seluruh menu berfungsi dengan baik | [✅] Ya / [ ] Tidak |
 
 **Jika hasil berbeda, kemungkinan penyebab:**
-> ___________________________________________________
+> Perbedaan hasil dapat disebabkan oleh koneksi internet yang tidak stabil, perubahan konfigurasi website, atau adanya pembaruan pada platform WordPress selama proses pengujian.
 
 **Checklist kontrol yang sudah diterapkan:**
-- [ ] Random seed di-set di semua level
-- [ ] Tidak ada background process yang mengganggu
-- [ ] Cache dibersihkan antar-run
-- [ ] Config file yang sama untuk semua run
+- [ ] Random seed di-set di semua level (tidak digunakan pada penelitian ini)
+- [✅] Tidak ada background process yang mengganggu
+- [✅] Cache dibersihkan antar-run
+- [✅] Menggunakan konfigurasi website yang sama untuk semua run
 
 ---
 
@@ -145,25 +145,35 @@ Rancang tes repeatability sederhana: jalankan kode yang sama 3× di environment 
 Tulis README minimum untuk eksperimen Anda (6 komponen wajib).
 
 ```
-# Judul Eksperimen: ____________________
+# Judul Eksperimen: Pengujian Website Profil Sekolah Berbasis WordPress
 
 ## 1. Environment
-> (Salin spesifikasi dari Latihan 1)
+| Komponen | Spesifikasi |
+|----------|------------|
+| CPU |Intel(R) Core(TM) i5-6200 CPU @ 2.30 GHz 2.40 GHz |
+| RAM | 8,00 GB DDR3 |
+| GPU | Intel(R) HD Graphics 520 (128 MB) |
+| OS | Windows 10 Pro |
+| Runtime | Web Browser (Google Chrome) |
+| Framework | WordPress |
+| Random Seed | Tidak digunakan karena penelitian tidak melibatkan proses acak. |
 
 ## 2. Installation
-> (Langkah instalasi, misal: "pip install -r requirements.txt")
+> 1. Membuat website menggunakan WordPress.
+> 2. Memastikan website dapat diakses melalui browser.
+> 3. Membagikan tautan website kepada responden untuk dilakukan pengujian.
 
 ## 3. Data
-> (Deskripsi data: sumber, format, ukuran)
+> Data yang digunakan berupa informasi profil sekolah, seperti profil sekolah, fasilitas, berita, dan informasi lainnya yang ditampilkan pada website. Data penelitian diperoleh dari hasil pengisian kuesioner oleh responden setelah mengakses website.
 
 ## 4. Execution
-> (Command untuk menjalankan eksperimen)
+> Responden mengakses website melalui tautan yang diberikan, mencoba fitur dan menu yang tersedia, kemudian mengisi kuesioner untuk menilai efektivitas penyampaian informasi.
 
 ## 5. Configuration
-> (File config yang digunakan + parameter kunci)
+> Website menggunakan konfigurasi bawaan WordPress. Selama proses pengujian tidak dilakukan perubahan konfigurasi agar seluruh responden mengakses sistem yang sama.
 
 ## 6. Expected Output
-> (Contoh output yang diharapkan + format)
+> Website dapat diakses dengan baik oleh responden, seluruh informasi dapat ditampilkan dengan benar, dan diperoleh data kuesioner yang dapat digunakan untuk mengukur efektivitas website sebagai media penyampaian informasi.
 ```
 
 ---
@@ -172,6 +182,6 @@ Tulis README minimum untuk eksperimen Anda (6 komponen wajib).
 
 > Apakah eksperimen Anda saat ini bisa direproduksi oleh orang lain tanpa bantuan Anda? Komponen apa yang masih hilang?
 
-**Level saat ini:** [ ] Repeatability / [ ] Reproducibility / [ ] Belum keduanya
+**Level saat ini:** [✅] Repeatability / [ ] Reproducibility / [ ] Belum keduanya
 **Komponen yang belum terdokumentasi:**
-> ___________________________________________________
+> Dokumentasi penelitian masih perlu dilengkapi, terutama terkait langkah-langkah pengujian yang lebih rinci, versi WordPress yang digunakan, serta dokumentasi konfigurasi website. Dengan dokumentasi yang lebih lengkap, penelitian akan lebih mudah direproduksi oleh peneliti lain.
