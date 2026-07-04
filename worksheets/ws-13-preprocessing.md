@@ -66,33 +66,33 @@ Data leakage terjadi ketika informasi dari test set "bocor" ke preprocessing:
 ```
 PREPROCESSING LOG
 
-Dataset           : ____________________
-Jumlah data awal  : ____________________
+Dataset           : Data kuesioner kepuasan pengguna website profil SMP Negeri 1 Alian berbasis WordPress
+Jumlah data awal  : Belum tersedia (pengumpulan data belum dilakukan)
 
 Cleaning:
 | Masalah | Jumlah Kasus | Penanganan | Justifikasi |
 |---------|-------------|------------|-------------|
-| Missing |             |            |             |
-| Duplikat|             |            |             |
-| Error   |             |            |             |
+| Missing | Belum diketahui | Akan diperiksa setelah data terkumpul | Pengumpulan data belum dilakukan |
+| Duplikat| Belum diketahui | Akan dilakukan pengecekan data ganda | Menjaga kualitas data |
+| Error   | Belum diketahui | Akan dilakukan standardisasi format data | Menjaga konsistensi data |
 
 Transformation:
 | Transformasi | Variabel | Detail | Alasan |
 |-------------|----------|--------|--------|
-|             |          |        |        |
+| Belum dilakukan | - | - | Menunggu data hasil penelitian |
 
 Normalization:
-  Metode    : ____________________
-  Alasan    : ____________________
-  Parameter : (dihitung dari: training set / seluruh data)
+  Metode    : Belum ditentukan
+  Alasan    : Menyesuaikan metode analisis yang digunakan
+  Parameter : Akan dihitung dari training set apabila diperlukan
 
 Leakage Check:
-  [ ] Parameter normalisasi dari training set saja
-  [ ] Tidak ada informasi test set dalam preprocessing
-  [ ] Cross-validation dilakukan setelah split
+  [✅] Parameter normalisasi akan dihitung dari training set saja apabila diperlukan.
+  [✅] Tidak ada informasi test set yang digunakan pada tahap preprocessing
+  [✅] Cross-validation akan dilakukan setelah train-test split apabila diperlukan.
 
-Jumlah data akhir : ____________________
-Script tersedia   : [ ] Ya → path: ____ | [ ] Belum
+Jumlah data akhir : Belum dapat ditentukan
+Script tersedia   : [ ] Ya → path: ____ | [✅] Belum
 ```
 
 ---
@@ -103,14 +103,13 @@ Periksa dataset Anda (atau dataset contoh) dan dokumentasikan masalah yang ditem
 
 | Masalah | Jumlah Kasus | Penanganan | Justifikasi |
 |---------|-------------|------------|-------------|
-| *Contoh: Missing di kolom "label"* | *12 dari 500 (2.4%)* | *Listwise deletion* | *< 5%, distribusi random (MCAR)* |
-| | | | |
-| | | | |
-| | | | |
+| Missing data | Belum diketahui | Akan diperiksa setelah data terkumpul | Pengumpulan data belum dilakukan |
+| Data duplikat | Belum diketahui | Akan dilakukan pengecekan data ganda | Menjamin setiap responden hanya tercatat satu kali |
+| Error format | Belum diketahui | Standardisasi format data | Agar data memiliki format yang konsisten |
 
-**Jumlah data sebelum cleaning:** ____
-**Jumlah data setelah cleaning:** ____
-**Persentase data yang hilang/berubah:** ____%
+**Jumlah data sebelum cleaning:** Belum diketahui
+**Jumlah data setelah cleaning:** Belum diketahui
+**Persentase data yang hilang/berubah:** Belum dapat ditentukan.
 
 ---
 
@@ -120,16 +119,15 @@ Tentukan apakah data Anda perlu normalisasi, dan jika ya, metode apa yang tepat.
 
 | Variabel | Range Asli | Distribusi | Outlier? | Metode Normalisasi | Alasan |
 |----------|-----------|-----------|----------|-------------------|--------|
-| *Contoh: response_time* | *0.1 – 45.2s* | *Right-skewed* | *Ya (45.2s)* | *Robust scaling* | *Ada outlier, perlu robust* || *Contoh: accuracy_score* | *0.72 – 0.95* | *Normal, narrow* | *Tidak* | *Tidak perlu* | *Sudah dalam [0,1], metode berbasis distance tidak digunakan* || | | | | | |
-| | | | | | |
+| Skor kepuasan pengguna | 1-5 | Belum diketahui | Belum diketahui | Belum ditentukan | Keputusan normalisasi akan disesuaikan dengan metode analisis setelah data terkumpul. |
 
-**Apakah normalisasi diperlukan?** [ ] Ya / [ ] Tidak
+**Apakah normalisasi diperlukan?** [✅] Belum dapat ditentukan. 
 **Justifikasi:**
-> ___________________________________________________
+> Penelitian masih berada pada tahap proposal sehingga belum terdapat data yang dapat dianalisis. Keputusan mengenai normalisasi akan ditentukan setelah data penelitian berhasil dikumpulkan dan disesuaikan dengan metode analisis yang digunakan.
 
 **Leakage check:**
-- [ ] Parameter dihitung dari training set saja
-- [ ] Normalisasi diterapkan setelah train-test split
+- [✅] Parameter normalisasi akan dihitung dari training set saja apabila diperlukan.
+- [✅] Normalisasi akan diterapkan setelah pembagian data (train-test split) apabila penelitian memerlukan metode machine learning.
 
 ---
 
@@ -140,16 +138,16 @@ Buat ringkasan preprocessing lengkap — dokumentasi yang cukup bagi orang lain 
 ```
 PREPROCESSING SUMMARY
 
-1. Dataset: ____________________
-2. Data awal: ____ records, ____ features
+1. Dataset: Data kuesioner kepuasan pengguna website profil SMP Negeri 1 Alian berbasis WordPress
+2. Data awal: Belum tersedia
 3. Cleaning:
-   - Missing values: ____ kasus, metode: ____
-   - Duplikat: ____ kasus, tindakan: ____
-   - Error: ____ kasus, tindakan: ____
-4. Transformation: ____________________
-5. Normalisasi: ____ (metode), parameter dari ____
-6. Data akhir: ____ records, ____ features
-7. Leakage check: [ ] Lulus / [ ] Ada masalah
+   - Missing values: Belum diketahui
+   - Duplikat: Belum diketahui
+   - Error: Belum diketahui
+4. Transformation: Belum dilakukan
+5. Normalisasi: Belum ditentukan
+6. Data akhir: Belum dapat ditentukan
+7. Leakage check: Akan diterapkan pada tahap analisis apabila diperlukan
 ```
 
 ---
@@ -158,5 +156,5 @@ PREPROCESSING SUMMARY
 
 > Apakah Anda pernah melakukan normalisasi "karena biasa dilakukan" tanpa mempertimbangkan apakah benar-benar diperlukan? Apa risiko over-preprocessing?
 
-> ___________________________________________________
-> ___________________________________________________
+> Karena penelitian saya masih berada pada tahap proposal, saya belum melakukan proses preprocessing maupun normalisasi data. Dari materi ini saya memahami bahwa normalisasi tidak selalu diperlukan, tetapi harus disesuaikan dengan karakteristik data dan metode analisis yang digunakan. Over-preprocessing dapat mengubah karakteristik asli data sehingga hasil analisis menjadi kurang akurat atau bahkan menghasilkan kesimpulan yang keliru.
+> 
