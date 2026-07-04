@@ -70,22 +70,21 @@ EXECUTION PLAN
 
 | Run # | Skenario | Seed | Parameter | Status | Waktu | Output File |
 |-------|----------|------|-----------|--------|-------|-------------|
-| 1     |          |      |           |        |       |             |
-| 2     |          |      |           |        |       |             |
-| 3     |          |      |           |        |       |             |
-| ...   |          |      |           |        |       |             |
+| 1     | Pengujian website oleh responden siswa | N/A | Website WordPress dan Google Form | Planned | - | hasil_siswa.csv |
+| 2     | Pengujian website oleh responden guru | N/A | Website WordPress dan Google Form | Planned | - | hasil_guru.csv |
+| 3     | Pengujian website oleh responden masyarakat | N/A | Website WordPress dan Google Form | Planned | - | hasil_masyarakat.csv |
 
-Jumlah runs per skenario : ____
-Total runs               : ____
+Jumlah runs per skenario : 2 kali
+Total runs               : 6 kali
 
 DATA LOG (per run):
-  Run ID    : ____________________
-  Timestamp : ____________________
-  Skenario  : ____________________
-  Input     : ____________________
-  Output    : ____________________
-  Anomali   : ____________________
-  Catatan   : ____________________
+  Run ID    : RUN-001
+  Timestamp : 04 Juli 2026
+  Skenario  : Pengujian website oleh responden siswa.
+  Input     : Website profil SMP Negeri 1 Alian berbasis WordPress. Responden diminta membuka halaman Home, Profil, Visi Misi, Berita, Galeri, dan Kontak.
+  Output    : Hasil penelitian dari Google Form. Skor kepuasan pengguna. Masukan atau saran dari responden.
+  Anomali   : Tidak ada.
+  Catatan   : Pengujian berjalan dengan baik dan seluruh fitur website dapat diakses oleh responden.
 ```
 
 ---
@@ -96,15 +95,16 @@ Susun execution plan untuk eksperimen Anda. Tentukan skenario, jumlah run, dan s
 
 | Run # | Skenario | Seed | Parameter Kunci | Status |
 |-------|----------|------|----------------|--------|
-| *1* | *Contoh: BERT-base, DS-1* | *42* | *lr=2e-5, epoch=10* | *Planned* |
-| *2* | *BERT-base, DS-1* | *123* | *lr=2e-5, epoch=10* | *Planned* |
-| 3 | | | | |
-| 4 | | | | |
-| 5 | | | | |
+| 1 | Pengujian website oleh responden siswa | N/A | Website WordPress dan Google Form | Planned |
+| 2 | Pengujian website oleh responden guru | N/A | Website WordPress dan Google Form | Planned |
+| 3 | Pengujian website oleh masyarakat | N/A | Website WordPress dan Google Form | Planned |
+| 4 | Pengujian ulang responden siswa | N/A | Website WordPress dan Google Form | Planned |
+| 5 | Pengujian ulang responden guru | N/A | Website WordPress dan Google Form | Planned |
+| 6 | Pengujian ulang responden masyarakat | N/A | Website WordPress dan Google Form | Planned |
 
-**Total skenario:** ____
-**Run per skenario:** ____
-**Total run keseluruhan:** ____
+**Total skenario:** 3
+**Run per skenario:** 2 kali
+**Total run keseluruhan:** 6 kali
 
 ---
 
@@ -115,25 +115,30 @@ Desain format data log untuk eksperimen Anda. Tentukan field apa saja yang akan 
 **Identitas:**
 | Field | Contoh |
 |-------|--------|
-| Run ID | *run-001* |
-| Timestamp | *2025-03-15T10:30:00* |
-| | |
+| Run ID | RUN-001 |
+| Timestamp | 04 Juli 2026 |
+| Skenario | Pengujian website oleh responden siswa |
+| Status | Berhasil |
 
 **Konfigurasi:**
 | Field | Contoh |
 |-------|--------|
-| Seed | *42* |
-| Code version | *commit abc1234* |
-| | |
+| Seed | N/A |
+| Platform | WordPress |
+| Browser | Google Chrome |
+| Perangkat | Laptop/Smartphone |
+| Instrumen | Google Form |
 
 **Hasil:**
 | Metrik | Tipe Data | Range Valid |
 |--------|----------|-------------|
-| *Contoh: Accuracy* | *float* | *0.0 – 1.0* |
-| | | |
-| | | |
+| Kemudahan penggunaan | Integer | 1-5 |
+| Kecepatan memperoleh informasi | Integer | 1-5 |
+| Tampilan website | Integer | 1-5 |
+| Kelengkapan informasi | Integer | 1-5 |
+| Kepuasan pengguna | Integer | 1-5 |
 
-**Format output:** [ ] CSV / [ ] JSON / [ ] Database / [ ] Lainnya: ____
+**Format output:** [✅] CSV / [ ] JSON / [ ] Database / [ ] Lainnya: ____
 
 ---
 
@@ -143,10 +148,10 @@ Rencanakan bagaimana menangani anomali. Untuk setiap jenis, tentukan langkah yan
 
 | Jenis Anomali | Contoh | Tindakan |
 |---------------|--------|----------|
-| Run gagal (crash) | *Contoh: OOM pada batch_size=64* | *Contoh: Dokumentasi, re-run batch_size=32, catat perubahan* |
-| Hasil ekstrem | | |
-| Waktu eksekusi anomali | | |
-| Inkonsistensi dengan run lain | | |
+| Run gagal (crash) | Website tidak dapat diakses saat pengujian | Mencatat penyebab gangguan, memperbaiki masalah, kemudian melakukan pengujian ulang. |
+| Hasil ekstrem | Salah satu responden memberikan nilai sangat rendah pada seluruh aspek | Memastikan responden telah mencoba seluruh fitur website, kemudian mencatat hasil tersebut sebagai bagian dari data penelitian. |
+| Waktu eksekusi anomali | Website lambat dimuat karena koneksi internet | Mencatat kondisi jaringan saat pengujian dan mengulang pengujian jika diperlukan. |
+| Inkonsistensi dengan run lain | Jawaban responden berbeda jauh dibanding responden lainnya | Memeriksa kembali hasil kuesioner dan memastikan tidak terjadi kesalahan pengisian sebelum dilakukan analisis. |
 
 **Prinsip:** Detect → Investigate → Document → Decide
 
@@ -157,6 +162,6 @@ Rencanakan bagaimana menangani anomali. Untuk setiap jenis, tentukan langkah yan
 > Pernahkah Anda melaporkan hasil riset/tugas dari single run? Apa risikonya? Bagaimana multiple run mengubah kepercayaan terhadap hasil?
 
 **Pengalaman sebelumnya:**
-> ___________________________________________________
+> Saya belum pernah melakukan pengujian penelitian seperti ini. Selama ini saya lebih sering membuat sistem atau menyelesaikan tugas tanpa menyusun execution plan maupun melakukan pengujian secara berulang. Saya juga belum terbiasa mencatat setiap hasil pengujian secara terstruktur, sehingga belum mengetahui apakah hasil yang diperoleh sudah benar-benar konsisten atau belum.
 **Yang akan dilakukan berbeda:**
-> ___________________________________________________
+> Setelah mempelajari materi ini, saya memahami bahwa pelaksanaan eksperimen tidak cukup hanya dilakukan satu kali. Ke depannya saya akan menyusun rencana pengujian terlebih dahulu, melakukan beberapa kali pengujian pada setiap skenario, serta mencatat seluruh hasil pengujian, termasuk jika terjadi kendala atau anomali. Dengan cara tersebut, hasil penelitian menjadi lebih lengkap, lebih mudah dianalisis, dan kesimpulan yang diperoleh dapat lebih dipercaya.
