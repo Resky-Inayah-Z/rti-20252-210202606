@@ -61,25 +61,25 @@ Problem (Bab 2) → Gap (Bab 3) → RQ & H (Bab 4) → Metrik (Bab 5) → Sistem
 PROPOSAL INTEGRATION CHECKLIST
 
 Koneksi Vertikal (Flow Atas-Bawah):
-  [ ] Problem → Gap: masalah terdokumentasi di literatur
-  [ ] Gap → RQ: pertanyaan menjawab gap spesifik
-  [ ] RQ → Hypothesis: hipotesis memprediksi jawaban
-  [ ] Hypothesis → Metric: metrik mengukur variabel dalam hipotesis
-  [ ] Metric → System: komponen sistem menghasilkan/mengukur metrik
-  [ ] System → Experiment: desain eksperimen menggunakan sistem
+  [✅] Problem → Gap: masalah terdokumentasi dari penggunaan media informasi konvensional.
+  [✅] Gap → RQ: pertanyaan penelitian menjawab kebutuhan media informasi yang lebih efektif.
+  [✅] RQ → Hypothesis: hipotesis memprediksi peningkatan efektivitas penyampaian informasi.
+  [✅] Hypothesis → Metric: efektivitas diukur melalui kepuasan pengguna dan akses informasi.
+  [✅] Metric → System: website menyediakan data yang dapat diukur menggunakan metrik yang ditentukan.
+  [✅] System → Experiment: website digunakan sebagai instrumen utama dalam eksperimen melalui pengujian pengguna dan kuesioner.
 
 Koneksi Horizontal (Konsistensi):
-  [ ] Istilah sama di semua bagian
-  [ ] Variabel di RQ = variabel di hipotesis = metrik di desain
-  [ ] Scope tidak berubah dari masalah ke eksperimen
+  [✅] Istilah sama di semua bagian
+  [✅] Variabel di RQ = variabel di hipotesis = metrik di desain
+  [✅] Scope tidak berubah dari masalah ke eksperimen
 
 Rubrik Self-Assessment:
 | Kriteria | 1 (Lemah) | 2 (Cukup) | 3 (Baik) | Skor |
 |----------|-----------|-----------|----------|------|
-| Koherensi |          |           |          |      |
-| Specificity |        |           |          |      |
-| Feasibility |        |           |          |      |
-| Rigor     |          |           |          |      |
+| Koherensi |          |✅|          | 2 |
+| Specificity |        |✅|          | 2 |
+| Feasibility |        |           |✅| 3 |
+| Rigor     |          |✅|          | 2 |
 ```
 
 ---
@@ -90,13 +90,13 @@ Kumpulkan hasil dari WS-02 sampai WS-07 menjadi satu ringkasan proposal.
 
 | Komponen | Sumber | Isi (1-2 kalimat) |
 |----------|--------|-------------------|
-| Problem Statement | WS-02 | *Contoh: Sistem rekomendasi memiliki akurasi tinggi (RMSE 0.87) tetapi satisfaction score rendah (45/100). Gap antara metrik teknis dan kepuasan pengguna belum diteliti.* |
-| Gap | WS-03 | *Contoh: Tidak ada studi yang mengintegrasikan collaborative filtering dengan user-context signals untuk meningkatkan satisfaction.* |
-| RQ | WS-04 | *Contoh: Apakah penambahan context-aware signals pada collaborative filtering meningkatkan satisfaction score tanpa menurunkan RMSE?* |
-| Hipotesis | WS-04 | *Contoh: H₁: Sistem CF+context menghasilkan satisfaction ≥ 70/100 dengan RMSE ≤ 0.90 dibanding baseline CF murni.* |
-| Variabel & Metrik | WS-05 | *Contoh: IV = jenis sistem (CF vs CF+context); DV = satisfaction score (skala 0-100) + RMSE (regresi).* |
-| Sistem | WS-06 | |
-| Desain Eksperimen | WS-07 | |
+| Problem Statement | WS-02 | Penyampaian informasi sekolah masih dilakukan melalui media konvensional seperti papan pengumuman sehingga informasi kurang efektif dan sulit diakses oleh siswa maupun masyarakat. |
+| Gap | WS-03 | Masih terbatas penggunaan website profil sekolah berbasis WordPress sebagai media informasi yang lebih efektif dan mudah diakses dibandingkan media informasi konvensional. |
+| RQ | WS-04 | Apakah website profil sekolah berbasis WordPress mampu meningkatkan efektivitas penyampaian informasi dibandingkan media informasi konvensional pada SMP Negeri 1 Alian? |
+| Hipotesis | WS-04 | H₁: Website profil sekolah berbasis WordPress memiliki efektivitas penyampaian informasi yang lebih baik dibandingkan media informasi konvensional dengan tingkat kepuasan pengguna ≥70%. |
+| Variabel & Metrik | WS-05 | IV = Media informasi yang digunakan. DV = Efektivitas penyampaian informasi. Metrik yang digunakan yaitu kepuasan pengguna, tingkat akses informasi, dan jumlah kunjungan website. |
+| Sistem | WS-06 | Sistem yang dikembangkan berupa website profil sekolah berbasis WordPress yang menyediakan informasi sekolah secara terpusat dengan tampilan responsif dan navigasi yang mudah digunakan. |
+| Desain Eksperimen | WS-07 | Pengguna diminta mencoba website kemudian mengisi kuesioner untuk mengukur tingkat kepuasan dan efektivitas penyampaian informasi dibandingkan media informasi konvensional. |
 
 ---
 
@@ -106,19 +106,19 @@ Verifikasi 6 koneksi kritis. Isi dengan merujuk tabel di Latihan 1.
 
 | Koneksi | Status | Bukti |
 |---------|--------|-------|
-| Problem → Gap | *Contoh: ✅ — gap muncul dari 15 paper Bab 3 yang tidak ada yang mengkombinasikan CF + context untuk satisfaction* | |
-| Gap → RQ | *Contoh: ✅ — RQ langsung menanyakan apakah CF+context meningkatkan satisfaction* | |
-| RQ → Hypothesis | *Contoh: ✅ — H₁ memprediksi satisfaction ≥ 70 dengan threshold RMSE ≤ 0.90* | |
-| Hypothesis → Metric | | |
-| Metric → System | | |
-| System → Experiment | | |
+| Problem → Gap | ✅ | Masalah penyampaian informasi yang masih konvensional melahirkan kebutuhan media informasi yang lebih efektif dan mudah diakses. |
+| Gap → RQ | ✅ | RQ secara langsung menanyakan apakah website profile sekolah berbasis WordPress lebih efektif dibandingkan media informasi konvensional. |
+| RQ → Hypothesis | ✅ | Hipotesis memprediksi bahwa website profil sekolah berbasis WordPress memiliki efektivitas yang lebih baik. |
+| Hypothesis → Metric | ✅ | Hipotesis diukur menggunakan tingkat kepuasan pengguna, akses informasi, dan jumlah kunjungan website. |
+| Metric → System | ✅ | Website menyediakan informasi yang dapat diakses pengguna sehingga metrik kepuasan dan akses informasi dapat diukur. |
+| System → Experiment | ✅ | Sistem digunakan sebagai objek eksperimen melalui pengujian website dan pengisian kuesioner oleh pengguna. |
 
-**Koneksi mana yang paling lemah?** _______________________
+**Koneksi mana yang paling lemah?** Metric → System
 **Bagaimana cara memperkuatnya?**
-> ___________________________________________________
+> Menambahkan indikator pengukuran yang lebih spesifik, misalnya waktu yang dibutuhkan pengguna untuk menemukan informasi, frekuensi akses website, serta jumlah halaman yang dikunjungi. Dengan begitu, metrik yang digunakan dapat diukur secara langsung melalui sistem yang dikembangkan.
 
-**Konsistensi horizontal — apakah istilah dan scope konsisten?** [ ] Ya / [ ] Tidak
-> Jika tidak, di bagian mana terjadi inkonsistensi? _________
+**Konsistensi horizontal — apakah istilah dan scope konsisten?** [✅] Ya / [] Tidak
+> Istilah yang digunakan sudah konsisten, seperti website profil sekolah, efektivitas penyampaian informasi, dan media informasi konvensional. Variabel penelitian juga tetap sama dari rumusan masalah hingga desain eksperimen sehingga ruang lingkup penelitian tidak berubah.
 
 ---
 
@@ -128,14 +128,14 @@ Evaluasi proposal mini menggunakan rubrik.
 
 | Kriteria | Skor (1-3) | Justifikasi |
 |----------|-----------|-------------|
-| Koherensi | *Contoh: 2 — koneksi gap→RQ masih lemah karena gap belum cukup narrow* | |
-| Specificity | *Contoh: 3 — metrik (satisfaction 0-100, RMSE) sudah terdefinisi numerik* | |
-| Feasibility | | |
-| Rigor | | |
+| Koherensi | 2 | Sebagian besar bagian sudah saling terhubung, tetapi masih terdapat sedikit perbedaan fokus antara WS-04, WS-05 dan WS-06. |
+| Specificity | 2 | Variabel dan metrik sudah ditentukan, tetapi prosedur eksperimen masih dapat dijelaskan lebih rinci. |
+| Feasibility | 3 | Website berbasis WordPress dapat dikembangkan dan diuji menggunakan kuesioner dengan sumber daya yang tersedia. |
+| Rigor | 2 | Pengukuran sudah menggunakan metrik yang jelas, namun desain eksperimen masih dapat diperkuat. |
 
-**Skor total:** _____ / 12
+**Skor total:** 9 / 12
 
-**Apakah proposal siap untuk fase eksekusi?** [ ] Ya / [ ] Belum
+**Apakah proposal siap untuk fase eksekusi?** [✅] Ya / [ ] Belum
 > Jika belum, apa yang perlu diperbaiki? __________________
 
 ---
@@ -144,8 +144,8 @@ Evaluasi proposal mini menggunakan rubrik.
 
 > Dari seluruh proses WS-01 sampai WS-08, bagian mana yang paling mudah dan paling sulit? Mengapa? Apa yang akan dilakukan berbeda jika mengulang dari awal?
 
-**Bagian termudah:** ____________________________________
-**Bagian tersulit:** ____________________________________
+**Bagian termudah:** Menentukan problem statement dan research question karena permasalahan penyampaian informasi sekolah masih sering ditemukan dan mudah diamati secara langsung.
+**Bagian tersulit:** Menentukan hubungan antara variabel, metrik, sistem , dan eksperimen agar seluruh bagian proposal tetap konsisten dari awal sampai akhir.
 **Yang akan dilakukan berbeda:**
-> ___________________________________________________
-> ___________________________________________________
+> Jika mengulang dari awal, saya akan menentukan fokus penelitian yang lebih spesifik dan mempertahankan fokus pada setiap worksheet. Saya juga akan menyusun hubungan antara variabel, metrik, dan eksperimen sejak awal agar tidak terjadi perubahan fokus di tengah proses penyusunan proposal.
+> 
