@@ -68,9 +68,10 @@ Ancaman validitas harus diidentifikasi **sebelum** eksperimen dan mitigasinya di
 ```
 EXPERIMENT DESIGN
 
-Research Question : Apakah penggunaan website profil sekolah berbasis WordPress dapat meningkatkan kepuasan pengguna dibandingkan media sosial dan papan pengumuman sebagai media informasi sebelumnya?
-Hypothesis        : Penggunaan website profil sekolah berbasis WordPress dapat meningkatkan kepuasan pengguna dibandingkan media sosial dan papan pengumuman sebagai media informasi sebelumnya.
-Tipe Eksperimen   : [√] Comparison  [ ] Ablation  [ ] Parameter
+Research Question : Apakah penggunaan website profil sekolah berbasis WordPress dapat meningkatkan kepuasan pengguna dibandingkan media sosialdan papan pengumuman sebagai media informasi sebelumnya?
+Hypothesis        : Penggunaan website profil sekolah berbasis WordPress dapat meningkatkan kepuasan pengguna dibandingkan media sosial dan papan pengumuman sebagai media informasi sebelumnya. 
+Tipe Eksperimen   : [✅] Comparison  [ ] Ablation  [ ] Parameter
+
 
 Kondisi Eksperimen:
 | Kondisi | Deskripsi | IV Value | CV Settings |
@@ -79,15 +80,18 @@ Kondisi Eksperimen:
 | Treatment | Pengguna memperoleh informasi melalui website profil sekolah berbasis WordPress | Website WordPress | Responden sama, informasi yang dicari sama, perangkat pengujian sama |
 
 Fairness Checklist:
-  [√] Dataset identik untuk semua kondisi
-  [√] Preprocessing setara
-  [√] Tuning effort setara
-  [√] Environment identik
-  [√] Metrik evaluasi sama
+
+  [✅] Dataset identik untuk semua kondisi
+  [✅] Preprocessing setara
+  [✅] Tuning effort setara
+  [✅] Environment identik
+  [✅] Metrik evaluasi sama
+
 
 Threat Analysis:
 | Threat Type | Ancaman Spesifik | Mitigasi |
 |-------------|-----------------|----------|
+
 | Internal    | Responden lebih terbiasa menggunakan media sosial dibanding website | Responden diminta mencoba kedua media sebelum mengisi kuesioner |
 | External    | Pengujian hanya dilakukan pada pengguna di SMP Negeri 1 Alian | Menambah jumlah responden yang lebih beragam pada penelitian selanjutnya |
 | Construct   | Kepuasan pengguna bersifat subjektif | Menggunakan indikator pertanyaan yang jelas pada kuesioner |
@@ -107,7 +111,9 @@ Statistical Plan:
 Susun desain eksperimen berdasarkan RQ, variabel, dan sistem dari WS-04 sampai WS-06.
 
 **RQ:** Apakah penggunaan website profil sekolah berbasis WordPress dapat meningkatkan kepuasan pengguna dibandingkan media sosial dan papan pengumuman sebagai media informasi sebelumnya?
-**Tipe eksperimen:** [√] Comparison / [ ] Ablation / [ ] Parameter
+
+**Tipe eksperimen:** [✅] Comparison / [ ] Ablation / [ ] Parameter
+
 
 | Kondisi | Deskripsi | IV Value | CV Settings |
 |---------|-----------|----------|-------------|
@@ -122,13 +128,14 @@ Evaluasi apakah desain eksperimen di Latihan 1 sudah fair.
 
 | Kriteria | Status | Detail |
 |----------|--------|--------|
-| Dataset identik | √ | Informasi yang dicari responden sama pada kedua kondisi |
-| Preprocessing setara | √ | Data dan informasi sekolah yang ditampilkan sama |
-| Tuning effort setara | √ | Informasi yang tersedia pada kedua media dibuat setara sehingga tidak ada kondisi yang lebih diuntungkan |
-| Environment identik | √ | Pengujian dilakukan menggunakan perangkat dan jaringan yang sama |
-| Metrik evaluasi sama | √ | Sama-sama dinilai menggunakan kuesioner kepuasan pengguna |
+| Dataset identik | ✅ | Informasi yang dicari responden sama pada kedua kondisi |
+| Preprocessing setara | ✅ | 	Data dan informasi sekolah yang ditampilkan sama |
+| Tuning effort setara | ✅ | Informasi yang tersedia pada kedua media dibuat setara sehingga tidak ada kondisi yang lebih diuntungkan |
+| Environment identik | ✅ | Pengujian dilakukan menggunakan perangkat dan jaringan yang sama |
+| Metrik evaluasi sama | ✅ | Sama-sama dinilai menggunakan kuesioner kepuasan pengguna |
 
-**Ada yang tidak fair?** [ ] Ya / [√] Tidak
+**Ada yang tidak fair?** [ ] Ya / [✅] Tidak
+
 > Jika ya, bagaimana cara memperbaikinya? ________________
 
 ---
@@ -141,12 +148,13 @@ Identifikasi ancaman validitas untuk desain eksperimen ini.
 |-------------|-----------------|----------|
 | Internal | Responden sudah memiliki pengalaman menggunakan media sosial sehingga penilaian bisa menjadi bias | Responden diminta mencoba kedua media sebelum memberikan penilaian |
 | External | Penelitian hanya dilakukan pada lingkungan SMP Negeri 1 Alian | Menambah jumlah dan variasi responden pada penelitian berikutnya |
-| Construct | Kepuasan pengguna dapat berbeda-beda karena penilaian bersifat subjektif | Menggunakan indikator kuesioner yang jelas dan mudah dipahami |
+| Construct | 	Kepuasan pengguna dapat berbeda-beda karena penilaian bersifat subjektif | Menggunakan indikator kuesioner yang jelas dan mudah dipahami |
 | Conclusion | Jumlah responden yang sedikit dapat memengaruhi keakuratan hasil | Menambah jumlah responden agar data lebih representatif |
 
 **Ancaman mana yang paling sulit dimitigasi?** External validity.
 **Mengapa?**
 > Karena penelitian hanya dilakukan pada satu sekolah sehingga hasil yang diperoleh belum tentu sama jika diterapkan pada sekolah lain yang memiliki kondisi dan kebutuhan yang berbeda.
+
 
 ---
 
